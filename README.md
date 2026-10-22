@@ -23,8 +23,17 @@ The project is developed in Python using scientific libraries including `pandas`
 
 ### Setting up
 
-When running the code for the first time, you will have to install the necessary packages from the environment.yml file into an environment in python.
+When running the code for the first time, you will have to install the necessary packages from the environment.yml file into a new environment in python.
 
-The first thing you will want to do is:
+The first thing you will want to do is to activate the environment in the IDE
+
 conda activate PlanetaryEnv
-to activate the environment in the IDE
+
+
+### Running the Script
+
+The scripts are designed so that you first run pixl_import_files.py to download all necessary files from NASA's pds database
+Then the data is combined into menaingful and handy files with pixl_combination.py
+
+Then the data is ready to use and the main.py script can be run to produce a range of outputs described in the code.
+Alternatively, the pixl_evaluation.ipynb provides a workflow with examples on the type of plots the functions can generate.
