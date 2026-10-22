@@ -19,3 +19,12 @@ The workflow processes PIXL elemental/oxide data to identify chemically distinct
 - Mapping of the spatial distribution of olivine-bearing material
 
 The project is developed in Python using scientific libraries including `pandas`, `NumPy`, `SciPy`, `Matplotlib`, `mpltern`, and `adjustText`.
+
+
+### Setting up
+
+When running the code for the first time, you will have to install the necessary packages from the environment.yml file into an environment in python.
+
+The first thing you will want to do is:
+conda activate PlanetaryEnv
+to activate the environment in the IDE
