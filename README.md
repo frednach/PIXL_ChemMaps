@@ -26,8 +26,9 @@ The project is developed in Python using scientific libraries including `pandas`
 When running the code for the first time, you will have to install the necessary packages from the environment.yml file into a new environment in python.
 
 The first thing you will want to do is to activate the environment in the IDE
-
+```
 conda activate PlanetaryEnv
+```
 
 
 ### Running the Script
