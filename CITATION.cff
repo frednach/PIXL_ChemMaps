@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: PIXL_ChemMaps
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Tom Frederik
+    family-names: Nachbar
+    orcid: 'https://orcid.org/0009-0003-9483-0135'
+repository-code: 'https://github.com/frednach/PIXL_ChemMaps'
+date-released: '2026-10-22'
