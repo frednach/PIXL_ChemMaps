@@ -43,6 +43,27 @@ with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
         if i % 20 == 0:
             print(f"Downloaded {i}/{len(pixl_oxides_urls)}")
 
+analysis_dir = f"pixl_cache/target_analysis"
+oxide_dir = f"pixl_cache/oxide_xml"
+oxides_dir = f"pixl_cache/oxides"
+plots_dir = f"pixl_cache/plots"
+processed_dir = f"pixl_cache/processed_data"
+rxl_dir = f"pixl_cache/rxl"
+target_dir = f"pixl_cache/target_analysis"
+targets_dir = f"pixl_cache/targets"
+
+directories = [analysis_dir, oxide_dir, oxides_dir, plots_dir, processed_dir, rxl_dir, target_dir, targets_dir]
+for dir in directories:
+    # Create Directory Structure if needed
+    directory_path = Path(dir)
+    try:
+        directory_path.mkdir()
+    except FileExistsError:
+        continue
+    except PermissionError:
+        print(f"Permission denied: Unable to create '{directory_path}'.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 #static url to the pds-database folder with the rxl files
 base_url_rxl = (
