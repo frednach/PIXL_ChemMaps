@@ -38,3 +38,8 @@ Then the data is combined into menaingful and handy files with pixl_combination.
 
 Then the data is ready to use and the main.py script can be run to produce a range of outputs described in the code.
 Alternatively, the pixl_evaluation.ipynb provides a workflow with examples on the type of plots the functions can generate.
+
+
+### Sensitivity Analysis
+
+In the file T_sensitivityAnalysis.py you can do a sensitivity analysis for the threshold parameter "T" and how it influences the output geometry. Using the plot_sensitivityAnalysis.py script you can then plot the results of the analysis and save them as .svg in the pixl_cache/processed_data folder.
